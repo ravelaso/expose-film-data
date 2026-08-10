@@ -1,0 +1,413 @@
+{
+  "version": 10,
+  "updatedAt": "2026-08-07T00:00:00Z",
+  "description": "Official film stocks for Expose Film with reciprocity data — edit this file and commit to master",
+  "filmStocks": [
+    {
+      "id": "kentmere_100",
+      "brand": "Kentmere",
+      "name": "100",
+      "iso": 100,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "kentmere_200",
+      "brand": "Kentmere",
+      "name": "200",
+      "iso": 200,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "kentmere_400",
+      "brand": "Kentmere",
+      "name": "400",
+      "iso": 400,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "kodak_gold_200",
+      "brand": "Kodak",
+      "name": "Gold 200",
+      "iso": 200,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36
+      }
+    },
+    {
+      "id": "kodak_ektar_100",
+      "brand": "Kodak",
+      "name": "Ektar 100",
+      "iso": 100,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10
+      }
+    },
+    {
+      "id": "kodak_ultramax_400",
+      "brand": "Kodak",
+      "name": "UltraMax 400",
+      "iso": 400,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36
+      }
+    },
+    {
+      "id": "kodak_portra_400",
+      "brand": "Kodak",
+      "name": "Portra 400",
+      "iso": 400,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      }
+    },
+    {
+      "id": "kodak_portra_800",
+      "brand": "Kodak",
+      "name": "Portra 800",
+      "iso": 800,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "kodak_tri_x_400",
+      "brand": "Kodak",
+      "name": "Tri-X 400",
+      "iso": 400,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 1,
+        "ranges": [
+          { "from": 1, "to": 10, "p": 1.30 },
+          { "from": 10, "to": 100, "p": 1.70 },
+          { "from": 100, "p": 1.54 }
+        ]
+      }
+    },
+    {
+      "id": "kodak_tmax_100",
+      "brand": "Kodak",
+      "name": "T-MAX 100",
+      "iso": 100,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 1,
+        "ranges": [
+          { "from": 1, "to": 100, "p": 1.18 },
+          { "from": 100, "p": 1.15 }
+        ]
+      }
+    },
+    {
+      "id": "kodak_ektachrome_e100",
+      "brand": "Kodak",
+      "name": "Ektachrome E100",
+      "iso": 100,
+      "type": "positive",
+      "process": "e6",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 120,
+        "ranges": [
+          { "from": 120, "p": 1.03 }
+        ]
+      }
+    },
+    {
+      "id": "fuji_c200",
+      "brand": "Fujifilm",
+      "name": "C200",
+      "iso": 200,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36
+      }
+    },
+    {
+      "id": "fuji_superia_400",
+      "brand": "Fujifilm",
+      "name": "Superia X-TRA 400",
+      "iso": 400,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36
+      }
+    },
+    {
+      "id": "fuji_pro_400h",
+      "brand": "Fujifilm",
+      "name": "Pro 400H",
+      "iso": 400,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "fuji_acros_100",
+      "brand": "Fujifilm",
+      "name": "Acros 100 II",
+      "iso": 100,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 120,
+        "ranges": [
+          { "from": 120, "p": 1.05 }
+        ]
+      }
+    },
+    {
+      "id": "fuji_velvia_50",
+      "brand": "Fujifilm",
+      "name": "Velvia 50",
+      "iso": 50,
+      "type": "positive",
+      "process": "e6",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 4,
+        "ranges": [
+          { "from": 4, "to": 32, "p": 1.17 },
+          { "from": 32, "p": 1.20 }
+        ]
+      }
+    },
+    {
+      "id": "fomapan_100",
+      "brand": "Fomapan",
+      "name": "100",
+      "iso": 100,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 1, "p": 1.30 },
+          { "from": 1, "to": 10, "p": 1.30 },
+          { "from": 10, "to": 100, "p": 1.90 },
+          { "from": 100, "p": 1.60 }
+        ]
+      }
+    },
+    {
+      "id": "fomapan_200",
+      "brand": "Fomapan",
+      "name": "200",
+      "iso": 200,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 1, "p": 1.48 },
+          { "from": 1, "to": 10, "p": 1.48 },
+          { "from": 10, "to": 100, "p": 1.95 },
+          { "from": 100, "p": 1.63 }
+        ]
+      }
+    },
+    {
+      "id": "fomapan_400",
+      "brand": "Fomapan",
+      "name": "400",
+      "iso": 400,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 1, "p": 1.18 },
+          { "from": 1, "to": 10, "p": 1.18 },
+          { "from": 10, "to": 100, "p": 1.78 },
+          { "from": 100, "p": 1.48 }
+        ]
+      }
+    },
+    {
+      "id": "ilford_hp5_400",
+      "brand": "Ilford",
+      "name": "HP5 Plus",
+      "iso": 400,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 10, "p": 1.40 },
+          { "from": 10, "p": 1.31 }
+        ]
+      }
+    },
+    {
+      "id": "ilford_fp4_125",
+      "brand": "Ilford",
+      "name": "FP4 Plus",
+      "iso": 125,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10,
+        "format4x5": 10,
+        "format8x10": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 10, "p": 1.18 },
+          { "from": 10, "p": 1.20 }
+        ]
+      }
+    },
+    {
+      "id": "ilford_delta_3200",
+      "brand": "Ilford",
+      "name": "Delta 3200",
+      "iso": 3200,
+      "type": "blackAndWhite",
+      "process": "bw",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      },
+      "reciprocity": {
+        "thresholdSeconds": 0.5,
+        "ranges": [
+          { "from": 0.5, "to": 10, "p": 1.40 },
+          { "from": 10, "p": 1.32 }
+        ]
+      }
+    },
+    {
+      "id": "cinestill_800t",
+      "brand": "CineStill",
+      "name": "800T",
+      "iso": 800,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "cinestill_50d",
+      "brand": "CineStill",
+      "name": "50D",
+      "iso": 50,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "lomo_color_100",
+      "brand": "Lomography",
+      "name": "Color Negative 100",
+      "iso": 100,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    },
+    {
+      "id": "lomo_color_400",
+      "brand": "Lomography",
+      "name": "Color Negative 400",
+      "iso": 400,
+      "type": "color",
+      "process": "c41",
+      "formats": {
+        "format135": 36,
+        "format120": 10
+      }
+    }
+  ]
+}

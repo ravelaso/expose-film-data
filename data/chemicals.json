@@ -1,0 +1,106 @@
+{
+  "version": 5,
+  "updatedAt": "2026-08-07T00:00:00Z",
+  "chemicals": [
+    {
+      "id": "rodinal",
+      "name": "Rodinal",
+      "type": "developer",
+      "process": "bw",
+      "isLiquid": true,
+      "dilutions": [
+        {
+          "label": "1+25",
+          "ratio": "1+25",
+          "reuse": { "mode": "oneShot" }
+        },
+        {
+          "label": "1+50",
+          "ratio": "1+50",
+          "reuse": { "mode": "oneShot" }
+        },
+        {
+          "label": "1+100",
+          "ratio": "1+100",
+          "reuse": { "mode": "oneShot" }
+        }
+      ],
+      "notes": "Classic stand developer, highly concentrated. One-shot: mix fresh per use, cannot be reused."
+    },
+    {
+      "id": "cinestill_df96",
+      "name": "CineStill DF96 Monobath",
+      "type": "developer",
+      "process": "bw",
+      "isLiquid": true,
+      "monobath": true,
+      "dilutions": [
+        {
+          "label": "stock",
+          "ratio": "stock",
+          "reuse": {
+            "mode": "secondsPerRoll",
+            "secondsPerRoll": 15,
+            "maxDurationSeconds": 480,
+            "capacityRollsPerLiter": 16
+          }
+        }
+      ],
+      "notes": "Single-step developer + fixer monobath. One solution, no stop or fix needed."
+    },
+    {
+      "id": "ilfostop",
+      "name": "Ilford Ilfostop",
+      "type": "stopBath",
+      "process": "bw",
+      "isLiquid": true,
+      "dilutions": [
+        {
+          "label": "1+19",
+          "ratio": "1+19",
+          "timeSeconds": 30,
+          "reuse": {
+            "mode": "capacityOnly",
+            "capacityRollsPerLiter": 15,
+            "indicator": "yellowToPurple"
+          }
+        }
+      ],
+      "notes": "Acid stop bath with indicator dye. Reusable by capacity: ~15 rolls per liter working solution."
+    },
+    {
+      "id": "ilford_rapid_fixer",
+      "name": "Ilford Rapid Fixer",
+      "type": "fixer",
+      "process": "bw",
+      "isLiquid": true,
+      "dilutions": [
+        {
+          "label": "1+4",
+          "ratio": "1+4",
+          "timeSeconds": 300,
+          "reuse": {
+            "mode": "capacityOnly",
+            "capacityRollsPerLiter": 24
+          }
+        }
+      ],
+      "notes": "Fast-acting rapid fixer. Reusable by capacity: ~24 rolls per liter working solution (1+4). Use clearing-time test to check exhaustion."
+    },
+    {
+      "id": "photo_flo",
+      "name": "Kodak Photo-Flo",
+      "type": "wettingAgent",
+      "process": "bw",
+      "isLiquid": true,
+      "dilutions": [
+        {
+          "label": "1+200",
+          "ratio": "1+200",
+          "timeSeconds": 60
+        }
+      ],
+      "notes": "Liquid wetting agent for final rinse."
+    }
+  ]
+}
