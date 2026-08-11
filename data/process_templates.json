@@ -9,7 +9,7 @@
       "family": "bw",
       "steps": [
         { "slot": "develop", "role": "developer", "required": true },
-        { "slot": "stop", "role": "stop", "required": true, "allowWaterStop": true },
+        { "slot": "stop", "role": "stop", "required": true },
         { "slot": "fix", "role": "fixer", "required": true },
         { "slot": "wash", "role": "wash", "required": true, "waterOnly": true },
         { "slot": "final_rinse", "role": "final_rinse", "required": false }
