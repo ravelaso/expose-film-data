@@ -1,105 +1,52 @@
 {
-  "version": 5,
-  "updatedAt": "2026-08-07T00:00:00Z",
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-11T00:00:00Z",
+  "description": "Phase 6 prototype - chemicals.json. What the chemical IS (no times, no dilutions - those moved to formulations.json). Derived from data/chemicals.json v5. manufacturer + physicalForm (Q7 resolved 2026-08-11 — replaces isLiquid).",
   "chemicals": [
     {
-      "id": "rodinal",
+      "id": "chem_rodinal",
       "name": "Rodinal",
+      "manufacturer": "Adox",
+      "physicalForm": "liquid",
       "type": "developer",
-      "process": "bw",
-      "isLiquid": true,
-      "dilutions": [
-        {
-          "label": "1+25",
-          "ratio": "1+25",
-          "reuse": { "mode": "oneShot" }
-        },
-        {
-          "label": "1+50",
-          "ratio": "1+50",
-          "reuse": { "mode": "oneShot" }
-        },
-        {
-          "label": "1+100",
-          "ratio": "1+100",
-          "reuse": { "mode": "oneShot" }
-        }
-      ],
+      "processType": "bw",
       "notes": "Classic stand developer, highly concentrated. One-shot: mix fresh per use, cannot be reused."
     },
     {
-      "id": "cinestill_df96",
+      "id": "chem_cinestill_df96",
       "name": "CineStill DF96 Monobath",
+      "manufacturer": "CineStill",
+      "physicalForm": "liquid",
       "type": "developer",
-      "process": "bw",
-      "isLiquid": true,
+      "processType": "bw",
       "monobath": true,
-      "dilutions": [
-        {
-          "label": "stock",
-          "ratio": "stock",
-          "reuse": {
-            "mode": "secondsPerRoll",
-            "secondsPerRoll": 15,
-            "maxDurationSeconds": 480,
-            "capacityRollsPerLiter": 16
-          }
-        }
-      ],
       "notes": "Single-step developer + fixer monobath. One solution, no stop or fix needed."
     },
     {
-      "id": "ilfostop",
+      "id": "chem_ilfostop",
       "name": "Ilford Ilfostop",
+      "manufacturer": "Ilford",
+      "physicalForm": "liquid",
       "type": "stopBath",
-      "process": "bw",
-      "isLiquid": true,
-      "dilutions": [
-        {
-          "label": "1+19",
-          "ratio": "1+19",
-          "timeSeconds": 30,
-          "reuse": {
-            "mode": "capacityOnly",
-            "capacityRollsPerLiter": 15,
-            "indicator": "yellowToPurple"
-          }
-        }
-      ],
+      "processType": "bw",
       "notes": "Acid stop bath with indicator dye. Reusable by capacity: ~15 rolls per liter working solution."
     },
     {
-      "id": "ilford_rapid_fixer",
+      "id": "chem_ilford_rapid_fixer",
       "name": "Ilford Rapid Fixer",
+      "manufacturer": "Ilford",
+      "physicalForm": "liquid",
       "type": "fixer",
-      "process": "bw",
-      "isLiquid": true,
-      "dilutions": [
-        {
-          "label": "1+4",
-          "ratio": "1+4",
-          "timeSeconds": 300,
-          "reuse": {
-            "mode": "capacityOnly",
-            "capacityRollsPerLiter": 24
-          }
-        }
-      ],
+      "processType": "bw",
       "notes": "Fast-acting rapid fixer. Reusable by capacity: ~24 rolls per liter working solution (1+4). Use clearing-time test to check exhaustion."
     },
     {
-      "id": "photo_flo",
+      "id": "chem_photo_flo",
       "name": "Kodak Photo-Flo",
+      "manufacturer": "Kodak",
+      "physicalForm": "liquid",
       "type": "wettingAgent",
-      "process": "bw",
-      "isLiquid": true,
-      "dilutions": [
-        {
-          "label": "1+200",
-          "ratio": "1+200",
-          "timeSeconds": 60
-        }
-      ],
+      "processType": "bw",
       "notes": "Liquid wetting agent for final rinse."
     }
   ]

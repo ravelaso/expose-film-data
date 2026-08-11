@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10T00:00:00Z",
+  "description": "Phase 6 prototype - formulations.json. How a chemical is prepared: roles + usage + conditions. Non-develop step times live here as formulation conditions (Q8: inline, NO step_profiles.json). Dev times live in development_recommendations.json. Fixer uses flexible time type (directive #13): clearing_time_multiplier per its own notes. form_water_wash is the default wash: plain water, no chemical, fixed ~2 min (owner 2026-08-10) - timing not critical, inversions just for cleanliness.",
+  "formulations": [
+    {
+      "id": "form_rodinal_1plus25",
+      "chemicalId": "chem_rodinal",
+      "label": "1+25",
+      "ratio": "1+25",
+      "role": "developer",
+      "usage": { "mode": "oneShot" }
+    },
+    {
+      "id": "form_rodinal_1plus50",
+      "chemicalId": "chem_rodinal",
+      "label": "1+50",
+      "ratio": "1+50",
+      "role": "developer",
+      "usage": { "mode": "oneShot" }
+    },
+    {
+      "id": "form_rodinal_1plus100",
+      "chemicalId": "chem_rodinal",
+      "label": "1+100",
+      "ratio": "1+100",
+      "role": "developer",
+      "usage": { "mode": "oneShot" }
+    },
+    {
+      "id": "form_df96_stock",
+      "chemicalId": "chem_cinestill_df96",
+      "label": "stock",
+      "ratio": "stock",
+      "role": "developer",
+      "monobath": true,
+      "usage": {
+        "mode": "secondsPerRoll",
+        "secondsPerRoll": 15,
+        "maxDurationSeconds": 480,
+        "capacityRollsPerLiter": 16
+      }
+    },
+    {
+      "id": "form_ilfostop_1plus19",
+      "chemicalId": "chem_ilfostop",
+      "label": "1+19",
+      "ratio": "1+19",
+      "role": "stop",
+      "conditions": [
+        { "time": { "type": "fixed", "seconds": 30 } }
+      ],
+      "usage": {
+        "mode": "capacityOnly",
+        "capacityRollsPerLiter": 15,
+        "indicator": "yellowToPurple"
+      }
+    },
+    {
+      "id": "form_ilford_rapid_fixer_1plus4",
+      "chemicalId": "chem_ilford_rapid_fixer",
+      "label": "1+4",
+      "ratio": "1+4",
+      "role": "fixer",
+      "conditions": [
+        { "time": { "type": "fixed", "seconds": 300 } }
+      ],
+      "usage": {
+        "mode": "capacityOnly",
+        "capacityRollsPerLiter": 24
+      }
+    },
+    {
+      "id": "form_photo_flo_1plus200",
+      "chemicalId": "chem_photo_flo",
+      "label": "1+200",
+      "ratio": "1+200",
+      "role": "final_rinse",
+      "conditions": [
+        { "time": { "type": "fixed", "seconds": 60 } }
+      ]
+    },
+    {
+      "id": "form_water_wash",
+      "label": "Water (wash)",
+      "ratio": "water",
+      "name": "Water (wash)",
+      "role": "wash",
+      "waterOnly": true,
+      "conditions": [
+        { "time": { "type": "fixed", "seconds": 120 } }
+      ],
+      "notes": "Default wash: plain running water, ~2 min. Timing not critical - inversions are just for cleanliness. No chemical needed."
+    }
+  ]
+}

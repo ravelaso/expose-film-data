@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10T00:00:00Z",
+  "description": "Phase 6 prototype - sources.json. Where each recommendation/formulation data point came from. type + authority distinguish manufacturer / community (directive #6). Rodinal times are assigned to Massive Dev Chart (community) because the current recipes.json records no authority.",
+  "sources": [
+    {
+      "id": "source_ilford",
+      "name": "Ilford",
+      "type": "manufacturer",
+      "authority": "manufacturer",
+      "url": "https://www.ilfordphoto.com/"
+    },
+    {
+      "id": "source_kodak",
+      "name": "Kodak",
+      "type": "manufacturer",
+      "authority": "manufacturer",
+      "url": "https://www.kodak.com/"
+    },
+    {
+      "id": "source_cinestill_df96",
+      "name": "CineStill DF96",
+      "type": "manufacturer",
+      "authority": "manufacturer",
+      "url": "https://cinestillfilm.com/products/df96-monobath"
+    },
+    {
+      "id": "source_massive_dev_chart",
+      "name": "Massive Dev Chart (DigitalTruth)",
+      "type": "community",
+      "authority": "community",
+      "url": "https://www.digitaltruth.com/devchart.php"
+    }
+  ]
+}

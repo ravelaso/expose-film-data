@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10T00:00:00Z",
+  "description": "Phase 6 prototype - agitation_profiles.json. Reusable, first-class, referenced by ID (directive #4). Names are self-describing per §2.6c: [first_<duration>s]_<type>[_<count>]_[every_<interval>s]. Structured fields are the source of truth - the name is never parsed (directive #23). Derived from recipes.json v7 agitation blocks.",
+  "agitationProfiles": [
+    {
+      "id": "agitation_first_30s_invert_5_every_60s",
+      "name": "first_30s_invert_5_every_60s",
+      "firstAgitationSeconds": 30,
+      "firstAgitationMode": "continuous",
+      "method": "invert",
+      "pattern": "intermittent",
+      "count": 5,
+      "intervalSeconds": 60
+    },
+    {
+      "id": "agitation_first_30s_invert_5_every_30s",
+      "name": "first_30s_invert_5_every_30s",
+      "firstAgitationSeconds": 30,
+      "firstAgitationMode": "continuous",
+      "method": "invert",
+      "pattern": "intermittent",
+      "count": 5,
+      "intervalSeconds": 30
+    },
+    {
+      "id": "agitation_first_60s_invert_5_every_60s",
+      "name": "first_60s_invert_5_every_60s",
+      "firstAgitationSeconds": 60,
+      "firstAgitationMode": "continuous",
+      "method": "invert",
+      "pattern": "intermittent",
+      "count": 5,
+      "intervalSeconds": 60
+    }
+  ]
+}

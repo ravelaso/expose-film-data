@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10T00:00:00Z",
+  "description": "Phase 6 prototype - film_groups.json. OPTIONAL collection, source-backed only (feedback_3 §10). Empty: no source currently groups films. Open question Q10: keep explicit empty file or create on first use?",
+  "filmGroups": []
+}
