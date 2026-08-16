@@ -26,7 +26,7 @@
     },
     {
       "id": "source_massive_dev_chart",
-      "name": "Massive Dev Chart (DigitalTruth)",
+      "name": "Massive Dev Chart",
       "type": "community",
       "authority": "community",
       "url": "https://www.digitaltruth.com/devchart.php"

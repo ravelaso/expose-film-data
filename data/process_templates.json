@@ -1,28 +1,29 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-08-11T00:00:00Z",
-  "description": "Phase 6 prototype - process_templates.json. Templates: step slots, order, required/optional. NO pre-wet step (Q9). No times here - times live in formulation conditions / development recommendations. C-41 template steps follow Kodak Z-131 (Phase6-C41-Research.md); no kit chemical data yet. Wash has no time in data (open point).",
+  "description": "Phase 6 prototype - process_templates.json. Templates: ordered step roles, required/optional. NO pre-wet step (Q9). No times here - times live in formulation conditions / development recommendations. C-41 template steps follow Kodak Z-131 (Phase6-C41-Research.md); no kit chemical data yet. Wash has no time in data (open point).",
   "processTemplates": [
     {
       "id": "process_bw",
       "name": "B&W Negative Development",
       "family": "bw",
       "steps": [
-        { "slot": "develop", "role": "developer", "required": true },
-        { "slot": "stop", "role": "stop", "required": true },
-        { "slot": "fix", "role": "fixer", "required": true },
-        { "slot": "wash", "role": "wash", "required": true, "waterOnly": true },
-        { "slot": "final_rinse", "role": "final_rinse", "required": false }
+        { "role": "develop", "required": true },
+        { "role": "stop", "required": true },
+        { "role": "fix", "required": true },
+        { "role": "wash", "required": true, "waterOnly": true },
+        { "role": "rinse", "required": false }
       ]
     },
     {
       "id": "process_bw_monobath",
       "name": "B&W Monobath Development",
       "family": "bw",
+      "monobath": true,
       "steps": [
-        { "slot": "develop", "role": "developer", "required": true, "monobath": true },
-        { "slot": "wash", "role": "wash", "required": true, "waterOnly": true },
-        { "slot": "final_rinse", "role": "final_rinse", "required": false }
+        { "role": "develop", "required": true },
+        { "role": "wash", "required": true, "waterOnly": true },
+        { "role": "rinse", "required": false }
       ]
     },
     {
@@ -30,11 +31,11 @@
       "name": "C-41 Color Negative",
       "family": "c41",
       "steps": [
-        { "slot": "develop", "role": "developer", "required": true },
-        { "slot": "bleach", "role": "bleach", "required": true },
-        { "slot": "fix", "role": "fixer", "required": true },
-        { "slot": "wash", "role": "wash", "required": true, "waterOnly": true },
-        { "slot": "stabilizer", "role": "stabilizer", "required": true }
+        { "role": "develop", "required": true },
+        { "role": "bleach", "required": true },
+        { "role": "fix", "required": true },
+        { "role": "wash", "required": true, "waterOnly": true },
+        { "role": "stabilizer", "required": true }
       ]
     }
   ]

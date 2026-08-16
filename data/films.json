@@ -93,7 +93,7 @@
       }
     },
     {
-      "id": "film_kodak_tmax_100",
+      "id": "film_kodak_t_max_100",
       "brand": "Kodak",
       "name": "T-MAX 100",
       "iso": 100,
@@ -124,7 +124,7 @@
       }
     },
     {
-      "id": "film_fuji_c200",
+      "id": "film_fujifilm_c200",
       "brand": "Fujifilm",
       "name": "C200",
       "iso": 200,
@@ -133,7 +133,7 @@
       "formats": { "135": 36 }
     },
     {
-      "id": "film_fuji_superia_400",
+      "id": "film_fujifilm_superia_x_tra_400",
       "brand": "Fujifilm",
       "name": "Superia X-TRA 400",
       "iso": 400,
@@ -142,7 +142,7 @@
       "formats": { "135": 36 }
     },
     {
-      "id": "film_fuji_pro_400h",
+      "id": "film_fujifilm_pro_400h_400",
       "brand": "Fujifilm",
       "name": "Pro 400H",
       "iso": 400,
@@ -151,7 +151,7 @@
       "formats": { "135": 36, "120": 10 }
     },
     {
-      "id": "film_fuji_acros_100",
+      "id": "film_fujifilm_acros_100_ii_100",
       "brand": "Fujifilm",
       "name": "Acros 100 II",
       "iso": 100,
@@ -166,7 +166,7 @@
       }
     },
     {
-      "id": "film_fuji_velvia_50",
+      "id": "film_fujifilm_velvia_50",
       "brand": "Fujifilm",
       "name": "Velvia 50",
       "iso": 50,
@@ -236,7 +236,7 @@
       }
     },
     {
-      "id": "film_ilford_hp5_400",
+      "id": "film_ilford_hp5_plus_400",
       "brand": "Ilford",
       "name": "HP5 Plus",
       "iso": 400,
@@ -252,7 +252,7 @@
       }
     },
     {
-      "id": "film_ilford_fp4_125",
+      "id": "film_ilford_fp4_plus_125",
       "brand": "Ilford",
       "name": "FP4 Plus",
       "iso": 125,
@@ -284,7 +284,7 @@
       }
     },
     {
-      "id": "film_cinestill_800t",
+      "id": "film_cinestill_800t_800",
       "brand": "CineStill",
       "name": "800T",
       "iso": 800,
@@ -293,7 +293,7 @@
       "formats": { "135": 36, "120": 10 }
     },
     {
-      "id": "film_cinestill_50d",
+      "id": "film_cinestill_50d_50",
       "brand": "CineStill",
       "name": "50D",
       "iso": 50,
@@ -302,7 +302,7 @@
       "formats": { "135": 36, "120": 10 }
     },
     {
-      "id": "film_lomo_color_100",
+      "id": "film_lomography_color_negative_100",
       "brand": "Lomography",
       "name": "Color Negative 100",
       "iso": 100,
@@ -311,7 +311,7 @@
       "formats": { "135": 36, "120": 10 }
     },
     {
-      "id": "film_lomo_color_400",
+      "id": "film_lomography_color_negative_400",
       "brand": "Lomography",
       "name": "Color Negative 400",
       "iso": 400,

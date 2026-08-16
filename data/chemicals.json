@@ -4,48 +4,48 @@
   "description": "Phase 6 prototype - chemicals.json. What the chemical IS (no times, no dilutions - those moved to formulations.json). Derived from data/chemicals.json v5. manufacturer + physicalForm (Q7 resolved 2026-08-11 — replaces isLiquid).",
   "chemicals": [
     {
-      "id": "chem_rodinal",
+      "id": "chem_adox_rodinal",
       "name": "Rodinal",
       "manufacturer": "Adox",
       "physicalForm": "liquid",
-      "type": "developer",
+      "type": "develop",
       "processType": "bw",
       "notes": "Classic stand developer, highly concentrated. One-shot: mix fresh per use, cannot be reused."
     },
     {
-      "id": "chem_cinestill_df96",
-      "name": "CineStill DF96 Monobath",
+      "id": "chem_cinestill_df96_monobath",
+      "name": "DF96 Monobath",
       "manufacturer": "CineStill",
       "physicalForm": "liquid",
-      "type": "developer",
+      "type": "develop",
       "processType": "bw",
       "monobath": true,
       "notes": "Single-step developer + fixer monobath. One solution, no stop or fix needed."
     },
     {
-      "id": "chem_ilfostop",
-      "name": "Ilford Ilfostop",
+      "id": "chem_ilford_ilfostop",
+      "name": "Ilfostop",
       "manufacturer": "Ilford",
       "physicalForm": "liquid",
-      "type": "stopBath",
+      "type": "stop",
       "processType": "bw",
       "notes": "Acid stop bath with indicator dye. Reusable by capacity: ~15 rolls per liter working solution."
     },
     {
       "id": "chem_ilford_rapid_fixer",
-      "name": "Ilford Rapid Fixer",
+      "name": "Rapid Fixer",
       "manufacturer": "Ilford",
       "physicalForm": "liquid",
-      "type": "fixer",
+      "type": "fix",
       "processType": "bw",
       "notes": "Fast-acting rapid fixer. Reusable by capacity: ~24 rolls per liter working solution (1+4). Use clearing-time test to check exhaustion."
     },
     {
-      "id": "chem_photo_flo",
-      "name": "Kodak Photo-Flo",
+      "id": "chem_kodak_photo_flo",
+      "name": "Photo-Flo",
       "manufacturer": "Kodak",
       "physicalForm": "liquid",
-      "type": "wettingAgent",
+      "type": "rinse",
       "processType": "bw",
       "notes": "Liquid wetting agent for final rinse."
     }

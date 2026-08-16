@@ -5,34 +5,34 @@
   "formulations": [
     {
       "id": "form_rodinal_1plus25",
-      "chemicalId": "chem_rodinal",
+      "chemicalId": "chem_adox_rodinal",
       "label": "1+25",
       "ratio": "1+25",
-      "role": "developer",
+      "role": "develop",
       "usage": { "mode": "oneShot" }
     },
     {
       "id": "form_rodinal_1plus50",
-      "chemicalId": "chem_rodinal",
+      "chemicalId": "chem_adox_rodinal",
       "label": "1+50",
       "ratio": "1+50",
-      "role": "developer",
+      "role": "develop",
       "usage": { "mode": "oneShot" }
     },
     {
       "id": "form_rodinal_1plus100",
-      "chemicalId": "chem_rodinal",
+      "chemicalId": "chem_adox_rodinal",
       "label": "1+100",
       "ratio": "1+100",
-      "role": "developer",
+      "role": "develop",
       "usage": { "mode": "oneShot" }
     },
     {
-      "id": "form_df96_stock",
-      "chemicalId": "chem_cinestill_df96",
+      "id": "form_df96_monobath_stock",
+      "chemicalId": "chem_cinestill_df96_monobath",
       "label": "stock",
       "ratio": "stock",
-      "role": "developer",
+      "role": "develop",
       "monobath": true,
       "usage": {
         "mode": "secondsPerRoll",
@@ -43,7 +43,7 @@
     },
     {
       "id": "form_ilfostop_1plus19",
-      "chemicalId": "chem_ilfostop",
+      "chemicalId": "chem_ilford_ilfostop",
       "label": "1+19",
       "ratio": "1+19",
       "role": "stop",
@@ -52,16 +52,15 @@
       ],
       "usage": {
         "mode": "capacityOnly",
-        "capacityRollsPerLiter": 15,
-        "indicator": "yellowToPurple"
+        "capacityRollsPerLiter": 15
       }
     },
     {
-      "id": "form_ilford_rapid_fixer_1plus4",
+      "id": "form_rapid_fixer_1plus4",
       "chemicalId": "chem_ilford_rapid_fixer",
       "label": "1+4",
       "ratio": "1+4",
-      "role": "fixer",
+      "role": "fix",
       "conditions": [
         { "time": { "type": "fixed", "seconds": 300 } }
       ],
@@ -72,10 +71,10 @@
     },
     {
       "id": "form_photo_flo_1plus200",
-      "chemicalId": "chem_photo_flo",
+      "chemicalId": "chem_kodak_photo_flo",
       "label": "1+200",
       "ratio": "1+200",
-      "role": "final_rinse",
+      "role": "rinse",
       "conditions": [
         { "time": { "type": "fixed", "seconds": 60 } }
       ]

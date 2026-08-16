@@ -1,42 +1,39 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-08-11T00:00:00Z",
-  "description": "Phase 6 prototype - development_recommendations.json. THE atomic knowledge unit. Scoped (appliesTo) + condition table (conditions[]). One record = one source's table for a scope. Rows are INDEPENDENT combinations: exposureIndex + temperatureC + timeSeconds + agitationProfileId (agitation may differ per row). DF96 becomes ONE process-wide rule instead of two duplicated per-film entries (the exact smell the new model fixes). Rodinal times from current recipes.json; source classified as community (Massive Dev Chart) since no authority is recorded in the current data. HP5 EI 400 row = current data; EI 800 row = illustrative per plan example §2.6b. Pre-wet dropped (Q9).",
+  "description": "Phase 6 prototype - development_recommendations.json. THE atomic knowledge unit, developer-centric: one record = one developer formulation's whole chart (id = dev_{formulation body}). Nested scopes[] (one of filmIds / filmGroupIds / processType per entry, most-specific wins) each carry their own conditions[]. Each condition row carries its own sourceId (box-speed from manufacturer, push from community). Rows are INDEPENDENT combinations: exposureIndex + temperatureC + timeSeconds + agitationProfileId (agitation may differ per row). DF96 is one process-wide rule. Rodinal times from current recipes.json; source classified as community (Massive Dev Chart) since no authority is recorded in the current data. HP5 EI 400 row = current data; EI 800 row = illustrative per plan example §2.6b. Pre-wet dropped (Q9).",
   "developmentRecommendations": [
     {
-      "id": "dev_df96_bw_default",
-      "formulationId": "form_df96_stock",
-      "appliesTo": {
-        "processType": "bw"
-      },
-      "conditions": [
-        { "temperatureC": 20, "timeSeconds": 360, "agitationProfileId": "agitation_first_30s_invert_5_every_60s" },
-        { "temperatureC": 26, "timeSeconds": 240, "agitationProfileId": "agitation_first_30s_invert_5_every_30s" }
-      ],
-      "sourceId": "source_cinestill_df96"
+      "id": "dev_df96_monobath_stock",
+      "formulationId": "form_df96_monobath_stock",
+      "scopes": [
+        {
+          "processType": "bw",
+          "conditions": [
+            { "temperatureC": 20, "timeSeconds": 360, "agitationProfileId": "agitation_first_30s_invert_5_every_60s", "sourceId": "source_cinestill_df96" },
+            { "temperatureC": 26, "timeSeconds": 240, "agitationProfileId": "agitation_first_30s_invert_5_every_30s", "sourceId": "source_cinestill_df96" }
+          ]
+        }
+      ]
     },
     {
-      "id": "dev_hp5_rodinal_1plus50",
+      "id": "dev_rodinal_1plus50",
       "formulationId": "form_rodinal_1plus50",
-      "appliesTo": {
-        "filmIds": ["film_ilford_hp5_400"]
-      },
-      "conditions": [
-        { "exposureIndex": 400, "temperatureC": 20, "timeSeconds": 660, "agitationProfileId": "agitation_first_60s_invert_5_every_60s" },
-        { "exposureIndex": 800, "temperatureC": 20, "timeSeconds": 840, "agitationProfileId": "agitation_first_60s_invert_5_every_60s" }
-      ],
-      "sourceId": "source_massive_dev_chart"
-    },
-    {
-      "id": "dev_kentmere400_rodinal_1plus50",
-      "formulationId": "form_rodinal_1plus50",
-      "appliesTo": {
-        "filmIds": ["film_kentmere_400"]
-      },
-      "conditions": [
-        { "temperatureC": 20, "timeSeconds": 1050, "agitationProfileId": "agitation_first_60s_invert_5_every_60s" }
-      ],
-      "sourceId": "source_massive_dev_chart"
+      "scopes": [
+        {
+          "filmIds": ["film_ilford_hp5_plus_400"],
+          "conditions": [
+            { "exposureIndex": 400, "temperatureC": 20, "timeSeconds": 660, "agitationProfileId": "agitation_first_60s_invert_5_every_60s", "sourceId": "source_massive_dev_chart" },
+            { "exposureIndex": 800, "temperatureC": 20, "timeSeconds": 840, "agitationProfileId": "agitation_first_60s_invert_5_every_60s", "sourceId": "source_massive_dev_chart" }
+          ]
+        },
+        {
+          "filmIds": ["film_kentmere_400"],
+          "conditions": [
+            { "temperatureC": 20, "timeSeconds": 1050, "agitationProfileId": "agitation_first_60s_invert_5_every_60s", "sourceId": "source_massive_dev_chart" }
+          ]
+        }
+      ]
     }
   ]
 }
